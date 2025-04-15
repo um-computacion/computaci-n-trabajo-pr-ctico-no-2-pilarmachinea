@@ -47,5 +47,20 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome("racecar")
         self.assertEqual(resultado, True)
 
+    def test_ala_la(self):
+       resultado = is_palindrome("ala la")
+       self.assertEqual(resultado, True)
+
+
+    def test_anita_lava_la_tina(self):
+       resultado = is_palindrome("Anita lava la tina")
+       self.assertEqual(resultado, True)
+
+
+    def test_Aman_a_plan_a_canal_Panama(self):
+       resultado = is_palindrome("A man, a plan, a canal: Panama")
+       self.assertEqual(resultado, True)
+
+
 if __name__ == '__main__':
     unittest.main()
