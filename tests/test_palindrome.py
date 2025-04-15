@@ -92,5 +92,17 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome("palabras")
         self.assertEqual(resultado, False)
 
+    def test_vacio(self):
+        resultado = is_palindrome("")
+        self.assertEqual(resultado, True)
+
+    def test_aA(self):
+        resultado = is_palindrome("aA")
+        self.assertEqual(resultado, True)
+
+    def test_A(self):
+        resultado = is_palindrome("A")
+        self.assertEqual(resultado, True)
+
 if __name__ == '__main__':
     unittest.main()
